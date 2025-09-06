@@ -1,5 +1,5 @@
 import unittest
-from homework.b_in_proc_out.output import multiply_numbers
+from output import multiply_numbers
 
 class TestMultiplyNumbers(unittest.TestCase):
     """
