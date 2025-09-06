@@ -1,1 +1,2 @@
-#
+from output import multiply_numbers
+class TestMultiplyNumbers:(multiply_numbers)
