@@ -1,10 +1,7 @@
-from devprocess import add_numbers, multiply_numbers
 
+from devprocess import multiply_numbers
 
-print('Hello Word')
-print('What is this I am seeing?')
-print('This is really cool!')
-def Hello_World():
-    print("Hello, World!")
+def main():
 
-Hello_World()
+if __name__ == "__main__":
+    main()
