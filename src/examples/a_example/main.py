@@ -1,5 +1,7 @@
-import devprocess
 
-result = devprocess.add_numbers(5, 5)
+from devprocess import multiply_numbers
 
-print(result)
+def main():
+
+if __name__ == "__main__":
+    main()
