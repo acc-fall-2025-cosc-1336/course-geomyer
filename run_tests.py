@@ -1,8 +1,6 @@
 import unittest
 
-from src.examples.a_example.devprocess import multiply_numbers
-
-
+from src.homework.a_dev_process import dev_process  
 
 
 suite = unittest.defaultTestLoader.loadTestsFromModule(__import__('src.examples.a_example.devprocess', fromlist=['']))
