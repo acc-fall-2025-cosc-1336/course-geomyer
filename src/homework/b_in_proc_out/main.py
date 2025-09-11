@@ -1,8 +1,19 @@
-from output import multiply_numbers
+from devprocess import multiply_numbers, add_num
 def main():
-    result1 = multiply_numbers(7, 7)
-    print(f"7 multiplied by 7 is {result1}")
-    result2 = multiply_numbers(5, 5)
-    print(f"5 multiplied by 5 is {result2}")# Saturday September 6 2025, 2:00:00 PM#
-if __name__ == "__main__":
-    main()
+
+    subtotal = 100
+    sales_tax_rate = 0.07
+    tip_percentage = 0.15
+
+    sales_tax = multiply_numbers(subtotal, sales_tax_rate)
+    tip = multiply_numbers(subtotal, tip_percentage)
+    total = add_num(subtotal, sales_tax + tip)
+
+    print(f'Subtotal: ${subtotal:.2f}')
+    print(f'Sales Tax: ${sales_tax:.2f}')
+    print(f'Tip: ${tip:.2f}')
+    print(f'Total: ${total:.2f}')       
+    
+
+
+
