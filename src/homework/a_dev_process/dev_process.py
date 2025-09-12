@@ -1,19 +1,14 @@
-#Create four variables to use in the function for bill calculation
-
-num1 = 'Subtotal:'
-num2 = 'Sales Tax: '
-num3 = 'Tip Percentage: '
-num4 = 'Total: '
-
+#This is an simple function to multiply two numbers
 def multiply_numbers(num1, num2):
     '''Returns the product of two numbers.'''
     return num1 * num2
-
-result1 = multiply_numbers(100, 1)  # Subtotal
-result2 = multiply_numbers(100, 0.0825)  # Sales Tax
-result3 = multiply_numbers(100, 0.15)  # Tip Percentage
-result4 = multiply_numbers(100, 1.22)  # Total (example)
-print(num1, result1)
-print(num2, result2)
-print(num3, result3)
-print(num4, result4)
+sales_tax_rate = 0.0825
+tip_percentage = 0.15
+subtotal = 100
+sales_tax = multiply_numbers(subtotal, sales_tax_rate)
+tip = multiply_numbers(subtotal, tip_percentage)
+total = subtotal + sales_tax + tip
+print(f'Subtotal: ${subtotal:.2f}')
+print(f'Sales Tax: ${sales_tax:.2f}')
+print(f'Tip: ${tip:.2f}')
+print(f'Total: ${total:.2f}')   
