@@ -1,17 +1,22 @@
 # Saturday September 6 2025, 2:05:00 PM#
 import unittest
+import src.homework.b_in_proc_out.main  as b_in_proc_out
 
-from src.homework.b_in_proc_out.output import multiply_numbers
+class TestBInProcOut(unittest.TestCase):
+    def test_multiply_numbers(self):
+        self.assertEqual(b_in_proc_out.multiply_numbers(5, 5), 25)
+        self.assertEqual(b_in_proc_out.multiply_numbers(7, 7), 49)
 
-class TestMultiplyNumbers(unittest.TestCase):
-    """
-    Unit tests for the multiply_numbers function.
+    def test_main_function(self):
+        # Capture the output of the main function
+        import io
+        import sys
 
-    Test Cases:
-    - test_multiply_seven_by_seven: Verifies that multiplying 7 by 7 returns 49.
-    - test_multiply_five_by_five: Verifies that multiplying 5 by 5 returns 25.
-    """
-    def test_multiply_seven_by_seven(self):
-        self.assertEqual(multiply_numbers(7, 7), 49)
-    def test_multiply_five_by_five(self):
-        self.assertEqual(multiply_numbers(5, 5), 25)
+        captured_output = io.StringIO()          # Create StringIO object
+        sys.stdout = captured_output             # Redirect stdout.
+        b_in_proc_out.main()                     # Call the main function.
+        sys.stdout = sys.__stdout__              # Reset redirect.
+
+        output = captured_output.getvalue()
+        self.assertIn("Product of 5 and 5 is: 25", output)
+        self.assertIn("Product of 7 and 7 is: 49", output)  

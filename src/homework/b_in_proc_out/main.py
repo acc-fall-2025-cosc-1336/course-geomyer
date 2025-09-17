@@ -1,19 +1,12 @@
-from devprocess import multiply_numbers, add_num
+from output import multiply_numbers
+
 def main():
+    result1 = multiply_numbers(5, 5)
+    result2 = multiply_numbers(7, 7)
+    print(f"Product of 5 and 5 is: {result1}")
+    print(f"Product of 7 and 7 is: {result2}")  
 
-    subtotal = 100
-    sales_tax_rate = 0.07
-    tip_percentage = 0.15
 
-    sales_tax = multiply_numbers(subtotal, sales_tax_rate)
-    tip = multiply_numbers(subtotal, tip_percentage)
-    total = add_num(subtotal, sales_tax + tip)
-
-    print(f'Subtotal: ${subtotal:.2f}')
-    print(f'Sales Tax: ${sales_tax:.2f}')
-    print(f'Tip: ${tip:.2f}')
-    print(f'Total: ${total:.2f}')       
-    
-
+       
 
 
