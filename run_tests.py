@@ -1,6 +1,6 @@
 import unittest 
 
-from src.homework.b_in_proc_out import main
+from src.homework.b_in_proc_out import output
 
 
 suite = unittest.defaultTestLoader.loadTestsFromModule('src.homework.b_in_proc_out.main')    
