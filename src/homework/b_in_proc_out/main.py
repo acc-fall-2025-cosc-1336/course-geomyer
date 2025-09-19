@@ -1,3 +1,4 @@
+
 from output import multiply_numbers, get_sales_tax_rate, get_tip_percentage
 meal_amount = float(input("Enter the meal amount: "))
 tip_percentage = float(input("Enter the tip percentage (e.g., 15 for 15%): "))
@@ -20,5 +21,16 @@ print(f"Total: ${total:.2f}")
      
     
 
+from output import multiply_numbers
+
+def main():
+    result1 = multiply_numbers(5, 5)
+    result2 = multiply_numbers(7, 7)
+    print(f"Product of 5 and 5 is: {result1}")
+    print(f"Product of 7 and 7 is: {result2}")  
+
+
+
+       
 
 

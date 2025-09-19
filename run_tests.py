@@ -1,8 +1,10 @@
 import unittest 
 
+
 from src.homework.b_in_proc_out import output
 
 
-suite = unittest.defaultTestLoader.loadTestsFromModule('src.homework.b_in_proc_out.main')    
+suite = unittest.defaultTestLoader.loadTestsFromModule('src.homework.b_in_proc_out.output')    
+
 
 unittest.TextTestRunner(verbosity=2).run(suite)
