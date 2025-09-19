@@ -1,4 +1,4 @@
-#This is a simple function to multiply two numbers
+#This is an simple function to multiply two numbers
 def multiply_numbers(num1, num2):
     '''Returns the product of two numbers.'''
     return num1 * num2
@@ -11,5 +11,4 @@ total = subtotal + sales_tax + tip
 print(f'Subtotal: ${subtotal:.2f}')
 print(f'Sales Tax: ${sales_tax:.2f}')
 print(f'Tip: ${tip:.2f}')
-print(f'Total: ${total:.2f}')
-
+print(f'Total: ${total:.2f}')   
