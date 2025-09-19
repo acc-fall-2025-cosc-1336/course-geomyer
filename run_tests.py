@@ -1,7 +1,8 @@
 import unittest 
 
-from src.homework.a_dev_process import dev_process
+from src.homework.b_in_proc_out import main
 
 
-suite = unittest.defaultTestLoader.loadTestsFromModule(__import__('src.examples.a_example.devprocess', fromlist=['']))
+suite = unittest.defaultTestLoader.loadTestsFromModule('src.homework.b_in_proc_out.main')    
+
 unittest.TextTestRunner(verbosity=2).run(suite)
