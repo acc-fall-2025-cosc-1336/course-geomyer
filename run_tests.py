@@ -1,6 +1,10 @@
 import unittest 
 
-from src.homework.b_in_proc_out.output import multiply_numbers
 
-suite = unittest.defaultTestLoader.loadTestsFromModule(multiply_numbers)
+from src.homework.b_in_proc_out import output
+
+
+suite = unittest.defaultTestLoader.loadTestsFromModule('src.homework.b_in_proc_out.output')    
+
+
 unittest.TextTestRunner(verbosity=2).run(suite)
